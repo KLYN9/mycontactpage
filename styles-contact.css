@@ -116,7 +116,7 @@ p {
 	font-family: "semplicitapro", sans-serif;
 	font-size: 1.2em;
     line-height: 1.6;
-    color: rgb(167, 196, 229);
+    color: #10548b;
 	/* Use em for font size from an accessibility standpoint*/
 	/*--same color for h1 and h2 is rgb(167, 196, 229);;----*/
 }
@@ -126,14 +126,25 @@ nav{
 	font-size: 1.2em;
 	width: 90%; /*-- this is for responsiveness ---*/
 	margin: 0 auto; /* this is for centering the entire nav element inside the center ---*/
-	border: dotted rgba(167,196, 229, 0.711);
+	border: none;
 	border-width: 3px 0; /*-- this is for a 3 pixel border on top and bottom of the nav element, the 0 eleiminates the left and right sides of the border---*/
 	text-align: center;
 	margin-top: 2em; /*-- space above nav element--*/
 }
 nav li{
-	display:inline; /*-- this allows the block level elements to display next to one another */
+	display: inline-block;
+		padding: 3px 3px;
+		border-radius: 40px; /* Adjust the value to change the roundness */
+		background-color: rgba(167, 196, 229, 0.374); 
+		color: rgba(167,196, 229, 0.711);
+		text-align: left;
+		text-decoration: none;
+		font-size: 16px;
+		cursor: pointer;
+		border: none;
+	 /*-- this allows the block level elements to display next to one another */
 }
+
 nav a{
 	display: inline-block;
 	padding: 10px /* this adds space around each of the links */
@@ -144,8 +155,16 @@ a{
 	font-weight: bold;
 }
 a:hover{
-	color: #10548b;
-	background: rgb(255, 255, 255);
+	padding: 10px 10px;
+		border-radius: 1.5em; /* Adjust the value to change the roundness */
+		box-sizing: border-box;
+		display: inline-block;
+		background-color: rgba(167, 196, 229, 0.374); 
+		color: none;
+		text-align: left;
+		text-decoration: none;
+		font-size: 16px;
+		cursor: pointer;
+		border: 0.5px solid rgba(167, 196, 229, 0.374);
 }
     
-
