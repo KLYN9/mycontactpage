@@ -149,23 +149,36 @@ nav a{
 	display: inline-block;
 	padding: 10px /* this adds space around each of the links */
 } 
+
 a{
 	color:#10548b;
 	text-decoration: none; /* remove the undelrine */
 	font-weight: bold;
 }
-a:hover{
-	padding: 10px 10px;
-		border-radius: 1.5em; /* Adjust the value to change the roundness */
-		box-sizing: border-box;
-		display: inline-block;
-		background-color: rgba(167, 196, 229, 0.374); 
-		color: none;
-		text-align: left;
-		text-decoration: none;
-		font-size: 16px;
-		cursor: pointer;
-		border: 0.5px solid rgba(167, 196, 229, 0.374);
+
+.button-container {
+	display: flex block;
+	flex-direction: column; /* Stack buttons vertically and be responsive */
+  }
+
+  button {
+	font-family: "moby", sans-serif;
+	margin-bottom: 10px; /* Add space between stacked buttons */
+	padding: 30px 50px; /*increase clickable area*/
+	font-size: 16px; 
+	background-color: rgba(167, 196, 229, 0.374); 
+	color: #fff; /* Adjust text color as needed */
+	border: none;
+	display: block;
+	text-align: center;
+	border-radius: 20px; /*rounded button style*/
+	cursor: pointer;
+	list-style: none; /* Remove bullet points */
+	box-sizing: border-box;
+	margin: 10px 3em;
+  }   
+  
+button:hover {
+    background-color: rgba(167, 196, 229, 0.6); /* Adjust background color for hover effect */
 }
-    
 
